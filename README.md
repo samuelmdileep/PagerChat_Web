@@ -1,108 +1,190 @@
-<img width="603" height="1029" alt="Screenshot 2026-01-31 061457" src="https://github.com/user-attachments/assets/82a2ffb3-2907-41c4-84ad-ce4658165dd0" /># 📟 Pager Chat
+📟 Pager Chat
 
-> **"What if your smartphone was a 90s Pager?"**
+“What if your smartphone worked like a 90s pager?”
 
-**Pager Chat** is a retro-themed real-time messaging application built with **Flutter** and **Firebase**. It combines the nostalgia of 1990s beepers with modern real-time communication technology.
+Pager Chat is a retro-inspired real-time messaging Flutter Web App built using Flutter and Firebase.
+It replaces phone numbers with unique Pager IDs, combining old-school simplicity with modern real-time infrastructure.
 
----
+The app runs entirely in the browser and is hosted on GitHub Pages.
 
-## 🚀 Live Demo
-**Try it on the Web:** (https://samuelmdileep.github.io/PagerChat_Web/)
+🚀 Live Demo
 
+🌐 Web App:
+https://samuelmdileep.github.io/PagerChat_Web/
 
----
+✨ Key Features
+📟 Pager ID–Based Messaging
 
-## ✨ Features
+Chat using unique Pager IDs instead of phone numbers.
 
-* **📟 Unique Pager ID System:** Forget phone numbers. Add friends using their unique 6-digit Pager ID.
-* **⚡ Real-Time Messaging:** Instant message delivery powered by **Cloud Firestore**.
-* **🎨 Retro UI:** A fully custom "Dark Mode" aesthetic with terminal-green text and monospace fonts.
-* **🔔 Smart Notifications:**
-    * Background & Terminated state handling via **Firebase Cloud Messaging (FCM)**.
-    * Local heads-up notifications when the app is active.
-* **🔐 Secure Authentication:** Email/Password login with a smart "Self-Healing" profile system.
-* **📧 Smart Redirects:** Automatically detects and opens the native mail app (Gmail/Apple Mail) for email verification.
-* **🌐 Web Optimized:** Custom renderer settings and disabled context menus for a native app feel on the browser.
+⚡ Real-Time Chat
 
----
+Instant message synchronization powered by Cloud Firestore.
 
-## 📱 Screenshots
+🎨 Retro Terminal UI
 
-| Login Screen | Chat List | Conversation |
-|:---:|:---:|:---:|
-|  <img width="608" height="1022" alt="Screenshot 2026-01-31 061012" src="https://github.com/user-attachments/assets/6994e6a8-b444-4086-85ae-2e5a9593ee5b" />
-img width="611" height="1021" alt="Screenshot 2026-01-31 060906" src="https://github.com/user-attachments/assets/2a6a04eb-7cb7-42b4-8119-24ddb4f26dad" />
-| <img width="608" height="1022" alt="Screenshot 2026-01-31 061012" src="https://github.com/user-attachments/assets/d788cbbd-bf10-4b09-ad7d-36c1231641aa" />  |    <img width="603" height="1029" alt="Screenshot 2026-01-31 061457" src="https://github.com/user-attachments/assets/ba4577c4-3b67-4adc-be80-07e45417f890" />   |
+Dark theme, neon-green highlights, boxy containers, minimal distractions.
 
+🔔 Smart Notifications
 
+Firebase Cloud Messaging (background & terminated states)
 
+Local in-app notifications when active
 
----
+🔐 Secure Authentication
 
-## 🛠️ Tech Stack
+Email / Password login
 
-* **Frontend:** [Flutter](https://flutter.dev/) (Dart)
-* **Backend:** [Firebase](https://firebase.google.com/)
-    * Authentication
-    * Cloud Firestore
-    * Cloud Messaging (FCM)
-* **State Management:** `StreamBuilder` & Native Flutter State
-* **Deployment:** GitHub Pages (Web)
+Auto-repair user profile creation
 
----
+📧 Smart Email Redirect
 
-## ⚙️ Installation & Setup
+Opens native mail apps for verification links
 
-If you want to run this project locally, follow these steps:
+🌐 Web-Optimized
 
-### 1. Clone the Repo
-```bash
-git clone [https://github.com/](https://github.com/)[YOUR-USERNAME]/PagerChat_Web.git
+Flutter Web build
+
+Custom web renderer
+
+Disabled context menu for native-app feel
+
+📱 Screenshots
+
+Login • Chat List • Conversation
+
+<p float="left"> <img src="https://github.com/user-attachments/assets/6994e6a8-b444-4086-85ae-2e5a9593ee5b" width="250" /> <img src="https://github.com/user-attachments/assets/2a6a04eb-7cb7-42b4-8119-24ddb4f26dad" width="250" /> <img src="https://github.com/user-attachments/assets/82a2ffb3-2907-41c4-84ad-ce4658165dd0" width="250" /> </p>
+🛠️ Tech Stack
+
+Frontend
+
+Flutter (Dart)
+
+Backend
+
+Firebase
+
+Authentication
+
+Cloud Firestore
+
+Cloud Messaging (FCM)
+
+State Handling
+
+Native Flutter state
+
+StreamBuilder
+
+Deployment
+
+GitHub Pages (Web)
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/YOUR-USERNAME/PagerChat_Web.git
 cd PagerChat_Web
-2. Install Dependencies
-Bash
+
+2️⃣ Install Dependencies
 flutter pub get
-3. Firebase Configuration (Crucial)
-This project relies on Firebase. You must provide your own firebase_options.dart.
 
-Create a project in the Firebase Console.
+3️⃣ Firebase Configuration (Required)
 
-Run flutterfire configure in your terminal.
+This project uses Firebase. You must generate your own configuration.
 
-Select your project and platforms (Android, iOS, Web).
+flutterfire configure
 
-4. Run the App
-For Android:
 
-Bash
-flutter run
-For Web:
+Select:
 
-Bash
+Android
+
+iOS
+
+Web
+
+This will generate firebase_options.dart.
+
+⚠️ Do not commit Firebase credentials publicly.
+
+4️⃣ Run the App
+
+Web
+
 flutter run -d chrome
-📦 Download APK
-Want to test it on Android? Download the latest release here: Download PagerChat.apk (Add your Google Drive/Dropbox link here)
+
+
+Android
+
+flutter run
+
+📦 APK Download
+
+📲 Android APK:
+(Coming soon – Web version is currently live)
+
+🧪 Current Project Status
+✅ Fully Working
+
+Pager ID system
+
+Real-time chat
+
+Contact save / edit / delete
+
+Unknown chat detection
+
+Search by name or Pager ID
+
+Unread indicator (animated pulse)
+
+Firebase authentication & notifications
+
+Web deployment
+
+⚠️ Partially Implemented
+
+Unread logic uses local state (not Firestore)
+
+No unread message count yet
+
+🔮 Planned Improvements
+
+Firestore-based unread tracking
+
+Unread message count badge
+
+Read receipts (seen / delivered)
+
+Typing indicators
+
+Message pagination
+
+Media & file sharing
+
+End-to-end encryption
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-Fork the Project
+Contributions are welcome!
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Fork the repository
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
+Create a branch
 
-Push to the Branch (git push origin feature/AmazingFeature)
+git checkout -b feature/YourFeature
 
-Open a Pull Request
+
+Commit changes
+
+git commit -m "Add YourFeature"
+
+
+Push and open a Pull Request
 
 📝 License
-Distributed under the MIT License. See LICENSE for more information.
 
-Made with 💚 and a lot of ☕ by [Your Name]
+Licensed under the MIT License.
+See LICENSE for details.
 
-
-### **How to make this look perfect:**
-1.  **Screenshots:** Create a folder in your project called `assets/screenshots`. Take 3 screenshots of your app, name them `login.png`, `list.png`, and `chat.png`, and put them there.
-2.  **Links:** Replace `[YOUR-USERNAME]` with your actual GitHub username.
-3.  **APK Link:** If you uploaded the APK to Drive, paste that link in the "Download
+Made with 💚 and ☕ by Samuel M Dileep
