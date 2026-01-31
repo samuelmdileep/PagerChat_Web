@@ -1,4 +1,4 @@
-# 📟 Pager Chat
+<img width="603" height="1029" alt="Screenshot 2026-01-31 061457" src="https://github.com/user-attachments/assets/82a2ffb3-2907-41c4-84ad-ce4658165dd0" /># 📟 Pager Chat
 
 > **"What if your smartphone was a 90s Pager?"**
 
@@ -7,9 +7,8 @@
 ---
 
 ## 🚀 Live Demo
-**Try it on the Web:** [https://[YOUR-USERNAME].github.io/PagerChat_Web/](https://[YOUR-USERNAME].github.io/PagerChat_Web/)
+**Try it on the Web:** (https://samuelmdileep.github.io/PagerChat_Web/)
 
-*(Note: Replace `[YOUR-USERNAME]` with your actual GitHub username)*
 
 ---
 
@@ -31,9 +30,12 @@
 
 | Login Screen | Chat List | Conversation |
 |:---:|:---:|:---:|
-| <img src="assets/screenshots/login.png" width="200"> | <img src="assets/screenshots/list.png" width="200"> | <img src="assets/screenshots/chat.png" width="200"> |
+|  <img width="608" height="1022" alt="Screenshot 2026-01-31 061012" src="https://github.com/user-attachments/assets/6994e6a8-b444-4086-85ae-2e5a9593ee5b" />
+img width="611" height="1021" alt="Screenshot 2026-01-31 060906" src="https://github.com/user-attachments/assets/2a6a04eb-7cb7-42b4-8119-24ddb4f26dad" />
+| <img width="608" height="1022" alt="Screenshot 2026-01-31 061012" src="https://github.com/user-attachments/assets/d788cbbd-bf10-4b09-ad7d-36c1231641aa" />  |    <img width="603" height="1029" alt="Screenshot 2026-01-31 061457" src="https://github.com/user-attachments/assets/ba4577c4-3b67-4adc-be80-07e45417f890" />   |
 
-*(Tip: Take screenshots of your app, put them in a folder named `screenshots`, and update the paths above!)*
+
+
 
 ---
 
