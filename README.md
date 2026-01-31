@@ -1,190 +1,105 @@
-📟 Pager Chat
+# 📟 Pager Chat
 
-“What if your smartphone worked like a 90s pager?”
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6994e6a8-b444-4086-85ae-2e5a9593ee5b" width="300" alt="Pager Chat Logo">
+  <br>
+  <b>"What if your smartphone worked like a 90s pager?"</b>
+  <br>
+  <i>A retro-inspired, real-time messaging Flutter Web App.</i>
+</p>
 
-Pager Chat is a retro-inspired real-time messaging Flutter Web App built using Flutter and Firebase.
-It replaces phone numbers with unique Pager IDs, combining old-school simplicity with modern real-time infrastructure.
+---
 
-The app runs entirely in the browser and is hosted on GitHub Pages.
+## 🌐 Overview
 
-🚀 Live Demo
+**Pager Chat** bridges the gap between 90s nostalgia and modern cloud infrastructure. By replacing intrusive phone numbers with unique **Pager IDs**, it offers a lightweight, lo-fi terminal experience built for the modern web.
 
-🌐 Web App:
-https://samuelmdileep.github.io/PagerChat_Web/
+[**🚀 Launch Live Demo**](https://samuelmdileep.github.io/PagerChat_Web/) | [**📦 Download APK** (Coming Soon)](#)
 
-✨ Key Features
-📟 Pager ID–Based Messaging
+---
 
-Chat using unique Pager IDs instead of phone numbers.
+## ✨ Key Features
 
-⚡ Real-Time Chat
+| Feature | Description |
+| :--- | :--- |
+| **📟 Pager ID System** | Chat using unique alphanumeric IDs instead of private phone numbers. |
+| **⚡ Real-Time Sync** | Instant message delivery powered by **Firebase Cloud Firestore**. |
+| **🎨 Retro UI** | Terminal-style dark theme with neon-green highlights and boxy containers. |
+| **🔔 Smart Alerts** | Background notifications via **FCM** and custom in-app local alerts. |
+| **🌐 Web Optimized** | Custom renderers and disabled context menus for a native-app feel. |
 
-Instant message synchronization powered by Cloud Firestore.
+---
 
-🎨 Retro Terminal UI
+## 📱 Interface Preview
 
-Dark theme, neon-green highlights, boxy containers, minimal distractions.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6994e6a8-b444-4086-85ae-2e5a9593ee5b" width="250" alt="Login Screen" />
+  <img src="https://github.com/user-attachments/assets/2a6a04eb-7cb7-42b4-8119-24ddb4f26dad" width="250" alt="Chat List" />
+  <img src="https://github.com/user-attachments/assets/82a2ffb3-2907-41c4-84ad-ce4658165dd0" width="250" alt="Conversation" />
+</p>
 
-🔔 Smart Notifications
+---
 
-Firebase Cloud Messaging (background & terminated states)
+## 🛠️ Technical Architecture
 
-Local in-app notifications when active
+### **The Stack**
+* **Frontend:** [Flutter](https://flutter.dev) (Dart)
+* **Database:** Cloud Firestore (NoSQL)
+* **Auth:** Firebase Authentication
+* **Messaging:** Firebase Cloud Messaging (FCM)
+* **Deployment:** GitHub Pages
 
-🔐 Secure Authentication
+---
 
-Email / Password login
+## ⚙️ Setup & Installation
 
-Auto-repair user profile creation
-
-📧 Smart Email Redirect
-
-Opens native mail apps for verification links
-
-🌐 Web-Optimized
-
-Flutter Web build
-
-Custom web renderer
-
-Disabled context menu for native-app feel
-
-📱 Screenshots
-
-Login • Chat List • Conversation
-
-<p float="left"> <img src="https://github.com/user-attachments/assets/6994e6a8-b444-4086-85ae-2e5a9593ee5b" width="250" /> <img src="https://github.com/user-attachments/assets/2a6a04eb-7cb7-42b4-8119-24ddb4f26dad" width="250" /> <img src="https://github.com/user-attachments/assets/82a2ffb3-2907-41c4-84ad-ce4658165dd0" width="250" /> </p>
-🛠️ Tech Stack
-
-Frontend
-
-Flutter (Dart)
-
-Backend
-
-Firebase
-
-Authentication
-
-Cloud Firestore
-
-Cloud Messaging (FCM)
-
-State Handling
-
-Native Flutter state
-
-StreamBuilder
-
-Deployment
-
-GitHub Pages (Web)
-
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/YOUR-USERNAME/PagerChat_Web.git
+### 1️⃣ Clone & Install
+```bash
+git clone [https://github.com/samuelmdileep/PagerChat_Web.git](https://github.com/samuelmdileep/PagerChat_Web.git)
 cd PagerChat_Web
-
-2️⃣ Install Dependencies
 flutter pub get
+2️⃣ Firebase Linkage
+This project requires a Firebase instance. Initialize your own config using:
 
-3️⃣ Firebase Configuration (Required)
-
-This project uses Firebase. You must generate your own configuration.
-
+Bash
 flutterfire configure
+Select Web, Android, and iOS to generate firebase_options.dart.
 
-
-Select:
-
-Android
-
-iOS
-
-Web
-
-This will generate firebase_options.dart.
-
-⚠️ Do not commit Firebase credentials publicly.
-
-4️⃣ Run the App
-
-Web
-
+3️⃣ Execution
+Bash
+# Run on Web
 flutter run -d chrome
 
-
-Android
-
+# Run on Mobile
 flutter run
+🔮 Roadmap
+[x] Phase 1: Core Pager ID routing & Real-time chat.
 
-📦 APK Download
+[x] Phase 2: Contact management & Search.
 
-📲 Android APK:
-(Coming soon – Web version is currently live)
+[ ] Phase 3: Server-side unread tracking (Firestore integration).
 
-🧪 Current Project Status
-✅ Fully Working
+[ ] Phase 4: Typing indicators & Message pagination.
 
-Pager ID system
-
-Real-time chat
-
-Contact save / edit / delete
-
-Unknown chat detection
-
-Search by name or Pager ID
-
-Unread indicator (animated pulse)
-
-Firebase authentication & notifications
-
-Web deployment
-
-⚠️ Partially Implemented
-
-Unread logic uses local state (not Firestore)
-
-No unread message count yet
-
-🔮 Planned Improvements
-
-Firestore-based unread tracking
-
-Unread message count badge
-
-Read receipts (seen / delivered)
-
-Typing indicators
-
-Message pagination
-
-Media & file sharing
-
-End-to-end encryption
+[ ] Phase 5: End-to-end encryption (E2EE).
 
 🤝 Contributing
+Contributions are what make the open-source community such an amazing place!
 
-Contributions are welcome!
+Fork the Project.
 
-Fork the repository
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
 
-Create a branch
+Commit your Changes (git commit -m 'Add AmazingFeature').
 
-git checkout -b feature/YourFeature
+Push to the Branch (git push origin feature/AmazingFeature).
 
-
-Commit changes
-
-git commit -m "Add YourFeature"
-
-
-Push and open a Pull Request
+Open a Pull Request.
 
 📝 License
+Distributed under the MIT License. See LICENSE for more information.
 
-Licensed under the MIT License.
-See LICENSE for details.
+<p align="center"> Made with 💚 and ☕ by <b>Samuel M Dileep</b> </p>
 
-Made with 💚 and ☕ by Samuel M Dileep
+
+Would you like me to help you create a **GitHub Action** to automate your deployment
